@@ -1,0 +1,37 @@
+#!url=https://raw.githubusercontent.com/tfcygvuhb/shadowrocket-rules/main/safe-search.sgmodule
+#!name=Safe Search Force
+#!desc=强制主流搜索引擎开启安全搜索；不包含 YouTube Restricted Mode
+#!author=Jay Han
+#!version=2026.05.08
+
+[URL Rewrite]
+
+# Google SafeSearch
+^https:\/\/www\.google\.com\/search\?(?!.*[?&]safe=active)(.*)$ https://www.google.com/search?$1&safe=active 302
+^https:\/\/www\.google\.com\/search\?(.*)[?&]safe=off(.*)$ https://www.google.com/search?$1&safe=active$2 302
+^https:\/\/www\.google\.com\/search\?(.*)[?&]safe=images(.*)$ https://www.google.com/search?$1&safe=active$2 302
+
+# Bing SafeSearch Strict
+^https:\/\/www\.bing\.com\/search\?(?!.*[?&]adlt=strict)(.*)$ https://www.bing.com/search?$1&adlt=strict 302
+^https:\/\/www\.bing\.com\/search\?(.*)[?&]adlt=(off|moderate)(.*)$ https://www.bing.com/search?$1&adlt=strict$3 302
+
+# DuckDuckGo Safe Search Strict
+^https:\/\/duckduckgo\.com\/\?(?!.*[?&]kp=1)(.*)$ https://duckduckgo.com/?$1&kp=1 302
+^https:\/\/www\.duckduckgo\.com\/\?(?!.*[?&]kp=1)(.*)$ https://duckduckgo.com/?$1&kp=1 302
+
+# Yahoo SafeSearch
+^https:\/\/search\.yahoo\.com\/search\?(?!.*[?&]vm=r)(.*)$ https://search.yahoo.com/search?$1&vm=r 302
+
+# Yandex Family Search
+^https:\/\/yandex\.com\/search\/\?(?!.*[?&]family=yes)(.*)$ https://yandex.com/search/?$1&family=yes 302
+^https:\/\/www\.yandex\.com\/search\/\?(?!.*[?&]family=yes)(.*)$ https://yandex.com/search/?$1&family=yes 302
+
+# Brave Search SafeSearch Strict
+^https:\/\/search\.brave\.com\/search\?(?!.*[?&]safesearch=strict)(.*)$ https://search.brave.com/search?$1&safesearch=strict 302
+
+# Startpage SafeSearch
+^https:\/\/www\.startpage\.com\/sp\/search\?(?!.*[?&]cat=web)(.*)$ https://www.startpage.com/sp/search?$1&cat=web 302
+
+
+[MITM]
+hostname = %APPEND% www.google.com,www.bing.com,duckduckgo.com,www.duckduckgo.com,search.yahoo.com,yandex.com,www.yandex.com,search.brave.com,www.startpage.com
