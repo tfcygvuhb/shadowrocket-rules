@@ -589,3 +589,9 @@ DOMAIN-KEYWORD,痴女
 DOMAIN-KEYWORD,触手
 DOMAIN-KEYWORD,SM论坛
 DOMAIN-KEYWORD,BDSM论坛
+URL-REGEX,^https?:\/\/.*(hentai|nhentai|hanime).*,REJECT-DROP
+URL-REGEX,^https?:\/\/.*(rule34|gelbooru|danbooru|xbooru).*,REJECT-DROP
+URL-REGEX,^https?:\/\/.*(bdsm|bondage|shibari|kinbaku).*,REJECT-DROP
+URL-REGEX,^https?:\/\/.*(javbus|javdb|missav|jable).*,REJECT-DROP
+URL-REGEX,^https?:\/\/.*(18comic|jmcomic|wnacg|picacg).*,REJECT-DROP
+URL-REGEX,^https?:\/\/.*(doujin|doujinshi|eromanga).*,REJECT-DROP
