@@ -645,9 +645,4 @@ DOMAIN-KEYWORD,里番
 DOMAIN-KEYWORD,本子
 
 
-URL-REGEX,^https?:\/\/.*(hentai|nhentai|hanime|doujin|doujinshi|eromanga).*,REJECT-DROP
-URL-REGEX,^https?:\/\/.*(rule34|gelbooru|danbooru|xbooru|booru).*,REJECT-DROP
-URL-REGEX,^https?:\/\/.*(bdsm|bondage|shibari|kinbaku|femdom|dominatrix).*,REJECT-DROP
-URL-REGEX,^https?:\/\/.*(javbus|javdb|javlibrary|jable|missav|supjav|avgle).*,REJECT-DROP
-URL-REGEX,^https?:\/\/.*(18comic|jmcomic|wnacg|picacg|hacg).*,REJECT-DROP
-URL-REGEX,^https?:\/\/.*(nsfw|r18|ecchi|ahegao).*,REJECT-DROP
+
