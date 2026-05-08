@@ -589,9 +589,20 @@ DOMAIN-KEYWORD,痴女
 DOMAIN-KEYWORD,触手
 DOMAIN-KEYWORD,SM论坛
 DOMAIN-KEYWORD,BDSM论坛
-URL-REGEX,^https?:\/\/.*(hentai|nhentai|hanime).*,REJECT-DROP
-URL-REGEX,^https?:\/\/.*(rule34|gelbooru|danbooru|xbooru).*,REJECT-DROP
-URL-REGEX,^https?:\/\/.*(bdsm|bondage|shibari|kinbaku).*,REJECT-DROP
-URL-REGEX,^https?:\/\/.*(javbus|javdb|missav|jable).*,REJECT-DROP
-URL-REGEX,^https?:\/\/.*(18comic|jmcomic|wnacg|picacg).*,REJECT-DROP
-URL-REGEX,^https?:\/\/.*(doujin|doujinshi|eromanga).*,REJECT-DROP
+# hentai / doujin
+URL-REGEX,^https?:\/\/.*(hentai|nhentai|hanime|doujin|doujinshi|eromanga).*,REJECT-DROP
+
+# booru / rule34
+URL-REGEX,^https?:\/\/.*(rule34|gelbooru|danbooru|xbooru|booru).*,REJECT-DROP
+
+# BDSM / bondage
+URL-REGEX,^https?:\/\/.*(bdsm|bondage|shibari|kinbaku|femdom|dominatrix).*,REJECT-DROP
+
+# JAV
+URL-REGEX,^https?:\/\/.*(javbus|javdb|javlibrary|jable|missav|supjav|avgle).*,REJECT-DROP
+
+# 中文漫画站
+URL-REGEX,^https?:\/\/.*(18comic|jmcomic|wnacg|picacg|hacg).*,REJECT-DROP
+
+# NSFW关键词
+URL-REGEX,^https?:\/\/.*(nsfw|r18|ecchi|ahegao).*,REJECT-DROP
